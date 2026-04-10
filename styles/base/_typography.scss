@@ -1,0 +1,11 @@
+$font-lato: "Lato", sans-serif;
+
+$fs-16: 16px;
+
+@font-face {
+  font-family: $font-lato;
+  font-size: $fs-16;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
