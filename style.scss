@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "styles/base/index" as *;
 @use "styles/components" as *;
 
@@ -8,7 +9,7 @@
   border: 1px solid red;
 
   @include respond-to("desktop") {
-    max-width: map-get($breakpoints, "desktop");
+    max-width: map.get($breakpoints, "desktop");
     padding: 0 375px;
     border: 1px solid green;
   }
