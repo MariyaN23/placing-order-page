@@ -1,2 +1,15 @@
 @use "styles/base/index" as *;
-//@use "styles/components" as *;
+@use "styles/components" as *;
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 1px solid red;
+
+  @include respond-to("desktop") {
+    max-width: map-get($breakpoints, "desktop");
+    padding: 0 375px;
+    border: 1px solid green;
+  }
+}

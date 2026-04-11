@@ -13,8 +13,34 @@
   </head>
   <body>
     <script type="module" src="/main.js"></script>
-      <main>
-          init
-      </main>
+    <main class="main-content">
+      <header class="header">
+        <div class="header__container container">
+          <a href="/" class="header__logo">
+            <img class="header__logo-img" src="assets/logo.webp" alt="Логотип Loremipsum.net">
+          </a>
+          <input type="checkbox" id="burger-check" class="header__checkbox">
+          <label for="burger-check" class="header__burger">
+            <span></span>
+          </label>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="/" class="header__link">Бизнес</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">О нас</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Цены</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link header__link--order">Оформить заказ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </main>
   </body>
 </html>
