@@ -1,9 +1,12 @@
 @use "sass:map";
 
+$max-content-width: 1920px;
+
 $breakpoints: (
         "mobile": 320px,
         "tablet": 768px,
-        "desktop": 1920px,
+        "desktop": 1280px,
+        "desktop-lg": 1920px,
 );
 
 @mixin respond-to($name) {

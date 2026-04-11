@@ -1,0 +1,76 @@
+@use "../base" as *;
+
+.footer {
+  background-color: $color-footer-bg;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+
+    @include respond-to("desktop") {
+      padding: 0;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      height: 80px;
+    }
+  }
+
+  &__copyright {
+    font-size: $fs-13;
+  }
+
+  &__info {
+
+    @include respond-to("desktop") {
+      display: flex;
+      gap: 78px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include respond-to("desktop") {
+      flex-direction: row;
+      align-items: center;
+      gap: 38px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 18px;
+        width: 1px;
+        background-color: $color-gray-100;
+        top: 50%;
+        left: -35px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__nav-link,
+  &__nav-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: $fs-13;
+  }
+
+  &__nav-link {
+    transition: color $duration $function;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__nav-text {
+    color: $color-gray-100;
+  }
+}

@@ -1,46 +1,81 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Страница оформления заказа">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
-    <title>Оформление заказа</title>
-  </head>
-  <body>
-    <script type="module" src="/main.js"></script>
-    <main class="main-content">
-      <header class="header">
-        <div class="header__container container">
-          <a href="/" class="header__logo">
-            <img class="header__logo-img" src="assets/logo.webp" alt="Логотип Loremipsum.net">
-          </a>
-          <input type="checkbox" id="burger-check" class="header__checkbox">
-          <label for="burger-check" class="header__burger">
-            <span></span>
-          </label>
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="/" class="header__link">Бизнес</a>
-              </li>
-              <li class="header__item">
-                <a href="/" class="header__link">О нас</a>
-              </li>
-              <li class="header__item">
-                <a href="/" class="header__link">Цены</a>
-              </li>
-              <li class="header__item">
-                <a href="/" class="header__link header__link--order">Оформить заказ</a>
-              </li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Страница оформления заказа">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+  <title>Оформление заказа</title>
+</head>
+<body>
+<script type="module" src="/main.js"></script>
+<main class="main-content">
+  <header class="header">
+    <div class="header__container container">
+      <a href="/" class="header__logo">
+        <img class="header__logo-img" src="assets/logo.webp" alt="Логотип Loremipsum.net">
+      </a>
+      <input type="checkbox" id="burger-check" class="header__checkbox">
+      <label for="burger-check" class="header__burger">
+        <span></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="/" class="header__link">Бизнес</a>
+          </li>
+          <li class="header__item">
+            <a href="/" class="header__link">О нас</a>
+          </li>
+          <li class="header__item">
+            <a href="/" class="header__link">Цены</a>
+          </li>
+          <li class="header__item">
+            <a href="/" class="header__link header__link--order">Оформить заказ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <footer class="footer">
+    <div class="footer__container container">
+      <p class="footer__copyright">
+        © 2018 «LOREMIPSUM.net» Все права защищены.
+      </p>
+      <div class="footer__info">
+        <div class="footer__nav">
+          <p class="footer__nav-text">
+            <img src="./assets/icons/qiwi.svg" alt="Qiwi" class="footer__nav-icon">
+            QIWI wallet
+          </p>
+          <p class="footer__nav-text">
+            <img src="./assets/icons/yandex.svg" alt="Yandex Money" class="footer__nav-icon">
+            Yandex Money
+          </p>
+          <p class="footer__nav-text">
+            <img src="./assets/icons/web-money.svg" alt="Web Money" class="footer__nav-icon">
+            Web Money
+          </p>
         </div>
-      </header>
-    </main>
-  </body>
+        <div class="footer__nav">
+          <a href="mailto:info@ipsum228.com" class="footer__nav-link">
+            <img src="./assets/icons/mail.svg" alt="E-mail" class="footer__nav-icon">
+            info@ipsum228.com
+          </a>
+          <a href="https://vk.com" class="footer__nav-link" target="_blank" rel="noopener">
+            <img src="./assets/icons/vk.svg" alt="Вконтакте" class="footer__nav-icon">
+            Мы вконтакте
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+</body>
 </html>
