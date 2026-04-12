@@ -21,3 +21,35 @@
     border: 1px solid blueviolet;
   }
 }
+
+.main-content {
+  padding-top: 60px;
+
+  @include respond-to("desktop") {
+    padding-top: 0;
+  }
+}
+
+.text-accent {
+  color: $color-accent-dark;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  height: 43px;
+  padding: 15px 10px;
+  color: $color-white;
+  font-size: $fs-13;
+  background-color: $color-accent-dark;
+  border: 1px solid $color-white;
+  border-radius: 4px;
+
+  &__secondary {
+    color: $color-black;
+    background-color: $color-white;
+    border-color: $color-gray-500;
+  }
+}

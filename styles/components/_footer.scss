@@ -23,9 +23,12 @@
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     @include respond-to("desktop") {
-      display: flex;
+      flex-direction: row;
       gap: 78px;
     }
   }
