@@ -18,7 +18,8 @@
 <header class="header">
     <div class="header__container container">
         <a href="/" class="header__logo">
-            <img class="header__logo-img" src="assets/images/logo.webp" alt="Логотип Loremipsum.net">
+            <img class="header__logo-img" src="assets/images/logo.webp" alt="Логотип Loremipsum.net"
+                 fetchpriority="high">
         </a>
         <input type="checkbox" id="burger-check" class="header__checkbox">
         <label for="burger-check" class="header__burger">
@@ -78,32 +79,32 @@
             </header>
             <div class="order__steps">
                 <div class="order__step">
-                    <div class="order__circle">
+                    <div class="order__circle" aria-hidden="true">
                         <img src="./assets/icons/search.svg" alt="Иконка поиска" class="order__icon">
                     </div>
                     <p class="order__step-text">Lorem ipsum dolor sit amet</p>
                 </div>
                 <div class="order__step">
-                    <div class="order__circle">
-                        <img src="./assets/icons/percent.svg" alt="Иконка процента" class="order__icon">
+                    <div class="order__circle" aria-hidden="true">
+                        <img src="./assets/icons/percent.svg" alt="" role="presentation" class="order__icon">
                     </div>
                     <p class="order__step-text">Consecteturadipiscing elit</p>
                 </div>
                 <div class="order__step">
-                    <div class="order__circle">
-                        <img src="./assets/icons/file.svg" alt="Иконка файла" class="order__icon">
+                    <div class="order__circle" aria-hidden="true">
+                        <img src="./assets/icons/file.svg" alt="" role="presentation" class="order__icon">
                     </div>
                     <p class="order__step-text">Sed do eiusmod tempor</p>
                 </div>
                 <div class="order__step">
-                    <div class="order__circle">
-                        <img src="./assets/icons/message.svg" alt="Иконка почты" class="order__icon">
+                    <div class="order__circle" aria-hidden="true">
+                        <img src="./assets/icons/message.svg" alt="" role="presentation" class="order__icon">
                     </div>
                     <p class="order__step-text">Esse cillum dolore eu fugiat</p>
                 </div>
                 <div class="order__step">
-                    <div class="order__circle">
-                        <img src="./assets/icons/money.svg" alt="Иконка купюры" class="order__icon">
+                    <div class="order__circle" aria-hidden="true">
+                        <img src="./assets/icons/money.svg" alt="" role="presentation" class="order__icon">
                     </div>
                     <p class="order__step-text">Excepteur sint occaecat cupidatat non proident</p>
                 </div>
@@ -159,8 +160,10 @@
                             </li>
                         </ul>
                     </div>
-                    <input aria-label="E-mail" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-                    <input aria-label="Имя" type="text" name="name" id="name" placeholder="Ваше имя" required>
+                    <input aria-label="E-mail" type="email" name="email" id="email" autocomplete="email"
+                           placeholder="Ваш e-mail" required>
+                    <input aria-label="Имя" type="text" name="name" id="name" autocomplete="name" placeholder="Ваше имя"
+                           required>
                 </div>
                 <div class="order__form-group">
                     <div class="order__range-wrapper">
@@ -175,7 +178,7 @@
                         <input name="attachment" id="attachment" type="file" class="order__file-input"/>
                         <label for="attachment" class="btn btn--secondary btn--lg order__file-label">
                             <img src="./assets/icons/attachment.svg" alt="Иконка вложения" class="order__file-icon"
-                                 aria-hidden="true">
+                                 aria-hidden="true" width="20" height="20">
                             Прикрепить файл
                         </label>
                     </div>
@@ -195,25 +198,25 @@
         <div class="footer__info">
             <div class="footer__nav">
                 <p class="footer__nav-text">
-                    <img src="./assets/icons/qiwi.svg" alt="Qiwi" class="footer__nav-icon">
+                    <img src="./assets/icons/qiwi.svg" alt="" class="footer__nav-icon" width="20" height="20">
                     QIWI wallet
                 </p>
                 <p class="footer__nav-text">
-                    <img src="./assets/icons/yandex.svg" alt="Yandex Money" class="footer__nav-icon">
+                    <img src="./assets/icons/yandex.svg" alt="" class="footer__nav-icon" width="20" height="20">
                     Yandex Money
                 </p>
                 <p class="footer__nav-text">
-                    <img src="./assets/icons/web-money.svg" alt="Web Money" class="footer__nav-icon">
+                    <img src="./assets/icons/web-money.svg" alt="" class="footer__nav-icon" width="20" height="20">
                     Web Money
                 </p>
             </div>
             <div class="footer__nav">
                 <a href="mailto:info@ipsum228.com" class="footer__nav-link">
-                    <img src="./assets/icons/mail.svg" alt="E-mail" class="footer__nav-icon">
+                    <img src="./assets/icons/mail.svg" alt="E-mail" class="footer__nav-icon" width="20" height="20">
                     info@ipsum228.com
                 </a>
                 <a href="https://vk.com" class="footer__nav-link" target="_blank" rel="noopener">
-                    <img src="./assets/icons/vk.svg" alt="Вконтакте" class="footer__nav-icon">
+                    <img src="./assets/icons/vk.svg" alt="Вконтакте" class="footer__nav-icon" width="20" height="20">
                     Мы вконтакте
                 </a>
             </div>
