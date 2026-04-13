@@ -51,12 +51,15 @@
 
       &::after {
         transform: translateY(-50%) rotate(180deg);
+        filter: invert(1) brightness(2);
       }
     }
   }
 
   &__dropdown {
     position: absolute;
+    max-height: 180px;
+    overflow-y: auto;
     top: 100%;
     left: 0;
     right: 0;

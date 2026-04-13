@@ -1,5 +1,6 @@
 @use "styles/base/index" as *;
 @use "styles/components" as *;
+@use "sass:color";
 
 .container {
   width: 100%;
@@ -43,4 +44,33 @@
   clip-path: inset(50%);
   white-space: nowrap;
   pointer-events: none;
+}
+
+.scroll {
+  --scrollbar-color-thumb: #{$color-accent-dark};
+  --scrollbar-color-track: #{$color-gray-600};
+  --scrollbar-width: thin;
+  --scrollbar-width-legacy: 10px;
+}
+
+@supports (scrollbar-width: auto) {
+  .scroll {
+    scrollbar-color: var(--scrollbar-color-thumb) var(--scrollbar-color-track);
+    scrollbar-width: var(--scrollbar-width);
+  }
+}
+
+@supports selector(::-webkit-scrollbar) {
+  .scroll::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color-thumb);
+  }
+  
+  .scroll::-webkit-scrollbar-track {
+    background: var(--scrollbar-color-track);
+  }
+
+  .scroll::-webkit-scrollbar {
+    max-width: var(--scrollbar-width-legacy);
+    max-height: var(--scrollbar-width-legacy);
+  }
 }
