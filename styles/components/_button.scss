@@ -1,0 +1,36 @@
+@use "../base" as *;
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  height: 43px;
+  padding: 15px 10px;
+  color: $color-white;
+  font-size: $fs-13;
+  background-color: $color-accent-dark;
+  border: 1px solid $color-white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all $duration $function;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--secondary {
+    color: $color-black;
+    background-color: $color-white;
+    border-color: $color-gray-500;
+  }
+
+  &--lg {
+    height: 48px;
+  }
+}

@@ -110,14 +110,46 @@
             </div>
             <form class="order__form" action="#" method="POST">
                 <div class="order__form-group">
-                    <select aria-label="Выберите тип системы" name="system_type" id="system-type" class="order__select"
-                            required>
-                        <option value="" disabled selected>Выберите тип системы</option>
-                        <option value="type1">Sed ut perspiciatis</option>
-                        <option value="type2">Nemo enim ipsam</option>
-                        <option value="type3">Et harum quidem</option>
-                        <option value="type3">Itaque earum rerum</option>
-                    </select>
+                    <div class="custom-select order__select">
+                        <input class="custom-select__input sr-only"
+                               required
+                               name="system_type"
+                               id="system-type-value"
+                               tabindex="-1"
+                               aria-hidden="true"
+                               value="">
+                        <label for="system-type-value" id="select-label" class="sr-only">Выберите тип системы</label>
+                        <button type="button"
+                                class="custom-select__button"
+                                id="select-btn"
+                                aria-haspopup="listbox"
+                                aria-expanded="false"
+                                aria-labelledby="select-label select-btn"
+                        >
+                            Выберите тип системы
+                        </button>
+                        <ul class="custom-select__dropdown"
+                            role="listbox"
+                            id="select-list"
+                            tabindex="-1"
+                            aria-labelledby="select-label">
+                            <li role="option" class="custom-select__option" aria-selected="false" tabindex="0">
+                                Sed ut perspiciatis
+                            </li>
+                            <li role="option" class="custom-select__option" aria-selected="false" tabindex="0">
+                                Nemo enim ipsam
+                            </li>
+                            <li role="option" class="custom-select__option" aria-selected="false" tabindex="0">
+                                Et harum quidem
+                            </li>
+                            <li role="option" class="custom-select__option" aria-selected="false" tabindex="0">
+                                Temporibus autem
+                            </li>
+                            <li role="option" class="custom-select__option" aria-selected="false" tabindex="0">
+                                Itaque earum rerum
+                            </li>
+                        </ul>
+                    </div>
                     <input aria-label="E-mail" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
                     <input aria-label="Имя" type="text" name="name" id="name" placeholder="Ваше имя" required>
                 </div>

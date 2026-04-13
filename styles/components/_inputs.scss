@@ -1,0 +1,75 @@
+@use "sass:color";
+@use "../base" as *;
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  height: 48px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid $color-white;
+  background-color: $color-input-bg;
+  color: $color-black;
+  transition: background-color $duration $function;
+
+  &::placeholder {
+    color: $color-content-bg;
+    font-size: $fs-18;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $color-white;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input[type="range"] {
+  --track-color: #{color.change($color-white, $alpha: 0.7)};
+  --thumb-color: #{$color-accent-lighter};
+  --thumb-border: #{$color-accent-darker};
+  --track-height: 6px;
+  --thumb-size: 24px;
+
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: var(--track-height);
+  background: transparent;
+
+  &::-webkit-slider-runnable-track {
+    height: var(--track-height);
+    background: var(--track-color);
+    border-radius: calc(var(--track-height) / 2);
+  }
+
+  &::-moz-range-track {
+    height: var(--track-height);
+    background: var(--track-color);
+    border-radius: calc(var(--track-height) / 2);
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: 50%;
+    background: var(--thumb-color);
+    border: 3px solid var(--thumb-border);
+    cursor: pointer;
+    margin-top: calc((var(--track-height) - var(--thumb-size)) / 2);
+  }
+
+  &::-moz-range-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: 50%;
+    background: var(--thumb-color);
+    border: 3px solid var(--thumb-border);
+    cursor: pointer;
+  }
+}

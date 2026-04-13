@@ -1,0 +1,94 @@
+@use "sass:color";
+@use "../base" as *;
+
+.custom-select {
+  position: relative;
+  width: 100%;
+
+  &__input {
+    bottom: 0;
+    left: 50%;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 36px 12px 10px;
+    color: $color-content-bg;
+    background: $color-input-bg;
+    border: 1px solid $color-white;
+    border-radius: 3px;
+    font-size: $fs-18;
+    cursor: pointer;
+    transition: all $duration $function;
+
+    &:active,
+    &:hover {
+      background-color: $color-white;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background-image: url("../../assets/icons/arrow-down.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transition: transform $duration;
+    }
+
+    &[aria-expanded="true"] {
+      border-color: $color-gray-600;
+      background-color: color.change($color-gray-600, $alpha: 0.85);
+      color: $color-white;
+
+      &::after {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background: color.change($color-content-bg, $alpha: 0.9);
+    border-radius: 3px;
+    border: 1px solid $color-gray-600;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity $duration $function;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  &__option {
+    padding: 10px 15px;
+    color: $color-white;
+    cursor: pointer;
+    font-size: $fs-18;
+    transition: color $duration $function;
+
+    &:hover, &:focus {
+      color: $color-accent-lighter;
+    }
+
+    &[aria-selected="true"] {
+      color: $color-accent-lighter;
+    }
+  }
+}

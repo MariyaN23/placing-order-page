@@ -106,7 +106,7 @@
     flex-direction: column;
     gap: 30px;
 
-    @include respond-to("tablet") {
+    @include respond-to("desktop") {
       flex-direction: row;
     }
   }
@@ -117,6 +117,7 @@
 
   &__range-header {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     margin-bottom: 5px;
   }
@@ -129,6 +130,7 @@
     font-size: $fs-18;
     font-weight: 600;
     color: $color-input-bg;
+    white-space: nowrap;
   }
 
   &__file-wrapper {
