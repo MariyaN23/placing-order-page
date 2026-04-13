@@ -1,104 +1,149 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Страница оформления заказа">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
-  <title>Оформление заказа</title>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Страница оформления заказа">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap">
+    <title>Оформление заказа</title>
 </head>
 <body>
 <script type="module" src="/main.js"></script>
 <header class="header">
-  <div class="header__container container">
-    <a href="/" class="header__logo">
-      <img class="header__logo-img" src="assets/images/logo.webp" alt="Логотип Loremipsum.net">
-    </a>
-    <input type="checkbox" id="burger-check" class="header__checkbox">
-    <label for="burger-check" class="header__burger">
-      <span></span>
-    </label>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">
-          <a href="/" class="header__link">Бизнес</a>
-        </li>
-        <li class="header__item">
-          <a href="/" class="header__link">О нас</a>
-        </li>
-        <li class="header__item">
-          <a href="/" class="header__link">Цены</a>
-        </li>
-        <li class="header__item">
-          <a href="/" class="header__link header__link--order">Оформить заказ</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <div class="header__container container">
+        <a href="/" class="header__logo">
+            <img class="header__logo-img" src="assets/images/logo.webp" alt="Логотип Loremipsum.net">
+        </a>
+        <input type="checkbox" id="burger-check" class="header__checkbox">
+        <label for="burger-check" class="header__burger">
+            <span></span>
+        </label>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="/" class="header__link">Бизнес</a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__link">О нас</a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__link">Цены</a>
+                </li>
+                <li class="header__item">
+                    <a href="/" class="header__link header__link--order">Оформить заказ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main class="main-content">
-  <section class="banner">
-    <div class="banner__container container">
-      <h1 class="banner__title">
-        <span class="text-accent">Lorem ipsum</span>
-        dolor sit <br class="banner__br"> amet consectetur
-        <span class="text-accent">adipiscing</span>
-      </h1>
-      <div class="banner__content">
-        <p class="banner__text">
-          At vero eos et accusamus et iusto odio dignissimos ducimus!
-        </p>
-        <ul class="banner__list">
-          <li class="banner__item">Totam rem aperiam eaque ipsa</li>
-          <li class="banner__item">Sit voluptatem accusantium doloremque laudantium</li>
-          <li class="banner__item">Sed ut perspiciatis, unde omnis iste natus error</li>
-        </ul>
-      </div>
-      <div class="banner__actions">
-        <button type="button" class="banner__btn btn">Заказать</button>
-        <button type="button" class="banner__btn btn btn__secondary">Подробнее</button>
-      </div>
-    </div>
-  </section>
+    <section class="banner">
+        <div class="banner__container container">
+            <h1 class="banner__title">
+                <span class="text-accent">Lorem ipsum</span>
+                dolor sit <br class="banner__br"> amet consectetur
+                <span class="text-accent">adipiscing</span>
+            </h1>
+            <div class="banner__content">
+                <p class="banner__text">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus!
+                </p>
+                <ul class="banner__list">
+                    <li class="banner__item">Totam rem aperiam eaque ipsa</li>
+                    <li class="banner__item">Sit voluptatem accusantium doloremque laudantium</li>
+                    <li class="banner__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                </ul>
+            </div>
+            <div class="banner__actions">
+                <button type="button" class="banner__btn btn">Заказать</button>
+                <button type="button" class="banner__btn btn btn__secondary">Подробнее</button>
+            </div>
+        </div>
+    </section>
+    <section class="order">
+        <div class="order__container container">
+            <header class="order__header">
+                <h2 class="order__title">
+                    Оформление <span class="text-accent">заказа</span>
+                </h2>
+                <p class="order__description">
+                    Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                </p>
+            </header>
+            <div class="order__steps">
+                <div class="order__step">
+                    <div class="order__circle">
+                        <img src="./assets/icons/search.svg" alt="Иконка поиска" class="order__icon">
+                    </div>
+                    <p class="order__step-text">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="order__step">
+                    <div class="order__circle">
+                        <img src="./assets/icons/percent.svg" alt="Иконка процента" class="order__icon">
+                    </div>
+                    <p class="order__step-text">Consecteturadipiscing elit</p>
+                </div>
+                <div class="order__step">
+                    <div class="order__circle">
+                        <img src="./assets/icons/file.svg" alt="Иконка файла" class="order__icon">
+                    </div>
+                    <p class="order__step-text">Sed do eiusmod tempor</p>
+                </div>
+                <div class="order__step">
+                    <div class="order__circle">
+                        <img src="./assets/icons/message.svg" alt="Иконка почты" class="order__icon">
+                    </div>
+                    <p class="order__step-text">Esse cillum dolore eu fugiat</p>
+                </div>
+                <div class="order__step">
+                    <div class="order__circle">
+                        <img src="./assets/icons/money.svg" alt="Иконка купюры" class="order__icon">
+                    </div>
+                    <p class="order__step-text">Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 </main>
 <footer class="footer">
-  <div class="footer__container container">
-    <p class="footer__copyright">
-      © 2018 «LOREMIPSUM.net» Все права защищены.
-    </p>
-    <div class="footer__info">
-      <div class="footer__nav">
-        <p class="footer__nav-text">
-          <img src="./assets/icons/qiwi.svg" alt="Qiwi" class="footer__nav-icon">
-          QIWI wallet
+    <div class="footer__container container">
+        <p class="footer__copyright">
+            © 2018 «LOREMIPSUM.net» Все права защищены.
         </p>
-        <p class="footer__nav-text">
-          <img src="./assets/icons/yandex.svg" alt="Yandex Money" class="footer__nav-icon">
-          Yandex Money
-        </p>
-        <p class="footer__nav-text">
-          <img src="./assets/icons/web-money.svg" alt="Web Money" class="footer__nav-icon">
-          Web Money
-        </p>
-      </div>
-      <div class="footer__nav">
-        <a href="mailto:info@ipsum228.com" class="footer__nav-link">
-          <img src="./assets/icons/mail.svg" alt="E-mail" class="footer__nav-icon">
-          info@ipsum228.com
-        </a>
-        <a href="https://vk.com" class="footer__nav-link" target="_blank" rel="noopener">
-          <img src="./assets/icons/vk.svg" alt="Вконтакте" class="footer__nav-icon">
-          Мы вконтакте
-        </a>
-      </div>
+        <div class="footer__info">
+            <div class="footer__nav">
+                <p class="footer__nav-text">
+                    <img src="./assets/icons/qiwi.svg" alt="Qiwi" class="footer__nav-icon">
+                    QIWI wallet
+                </p>
+                <p class="footer__nav-text">
+                    <img src="./assets/icons/yandex.svg" alt="Yandex Money" class="footer__nav-icon">
+                    Yandex Money
+                </p>
+                <p class="footer__nav-text">
+                    <img src="./assets/icons/web-money.svg" alt="Web Money" class="footer__nav-icon">
+                    Web Money
+                </p>
+            </div>
+            <div class="footer__nav">
+                <a href="mailto:info@ipsum228.com" class="footer__nav-link">
+                    <img src="./assets/icons/mail.svg" alt="E-mail" class="footer__nav-icon">
+                    info@ipsum228.com
+                </a>
+                <a href="https://vk.com" class="footer__nav-link" target="_blank" rel="noopener">
+                    <img src="./assets/icons/vk.svg" alt="Вконтакте" class="footer__nav-icon">
+                    Мы вконтакте
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
 </body>
 </html>
