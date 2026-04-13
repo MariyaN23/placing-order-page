@@ -35,6 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   text-transform: uppercase;
   height: 43px;
   padding: 15px 10px;
@@ -43,6 +44,7 @@
   background-color: $color-accent-dark;
   border: 1px solid $color-white;
   border-radius: 4px;
+  cursor: pointer;
   transition: all $duration $function;
 
   &:active {
@@ -53,9 +55,34 @@
     opacity: 0.8;
   }
 
-  &__secondary {
+  &--secondary {
     color: $color-black;
     background-color: $color-white;
     border-color: $color-gray-500;
   }
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid $color-white;
+  background-color: $color-input-bg;
+  color: $color-black;
+  transition: background-color $duration $function;
+
+  &::placeholder {
+    color: $color-content-bg;
+    font-size: $fs-18;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $color-white;
+  }
+}
+
+input[type="file"] {
+  display: none;
 }
