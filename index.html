@@ -62,7 +62,7 @@
             </div>
             <div class="banner__actions">
                 <button type="button" class="banner__btn btn">Заказать</button>
-                <button type="button" class="banner__btn btn btn__secondary">Подробнее</button>
+                <button type="button" class="banner__btn btn btn--secondary">Подробнее</button>
             </div>
         </div>
     </section>
@@ -108,7 +108,41 @@
                     <p class="order__step-text">Excepteur sint occaecat cupidatat non proident</p>
                 </div>
             </div>
-            
+            <form class="order__form" action="#" method="POST">
+                <div class="order__form-group">
+                    <select aria-label="Выберите тип системы" name="system_type" id="system-type" class="order__select"
+                            required>
+                        <option value="" disabled selected>Выберите тип системы</option>
+                        <option value="type1">Sed ut perspiciatis</option>
+                        <option value="type2">Nemo enim ipsam</option>
+                        <option value="type3">Et harum quidem</option>
+                        <option value="type3">Itaque earum rerum</option>
+                    </select>
+                    <input aria-label="E-mail" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+                    <input aria-label="Имя" type="text" name="name" id="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="order__form-group">
+                    <div class="order__range-wrapper">
+                        <div class="order__range-header">
+                            <label for="percent" class="order__label">Sed ut perspiciatis, unde omnis iste natus</label>
+                            <output for="percent" class="order__range-value">75%</output>
+                        </div>
+                        <input type="range" name="percent" id="percent" class="order__range" min="0" max="100" step="1"
+                               value="75">
+                    </div>
+                    <div class="order__file-wrapper">
+                        <input name="attachment" id="attachment" type="file" class="order__file-input"/>
+                        <label for="attachment" class="btn btn--secondary order__file-label">
+                            <img src="./assets/icons/attachment.svg" alt="Иконка вложения" class="order__file-icon"
+                                 aria-hidden="true">
+                            Прикрепить файл
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn--primary order__submit-btn">
+                    Отправить
+                </button>
+            </form>
         </div>
     </section>
 </main>

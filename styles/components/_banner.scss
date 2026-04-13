@@ -1,7 +1,6 @@
 @use "../base" as *;
 
 .banner {
-  background-color: $color-content-bg;
 
   @include respond-to("desktop") {
     aspect-ratio: 1920 / 850;
