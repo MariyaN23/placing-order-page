@@ -125,21 +125,21 @@
                     <div class="order__range-wrapper">
                         <div class="order__range-header">
                             <label for="percent" class="order__label">Sed ut perspiciatis, unde omnis iste natus</label>
-                            <output for="percent" class="order__range-value">75%</output>
+                            <output id="percent-output" for="percent" class="order__range-value"></output>
                         </div>
                         <input type="range" name="percent" id="percent" class="order__range" min="0" max="100" step="1"
                                value="75">
                     </div>
                     <div class="order__file-wrapper">
                         <input name="attachment" id="attachment" type="file" class="order__file-input"/>
-                        <label for="attachment" class="btn btn--secondary order__file-label">
+                        <label for="attachment" class="btn btn--secondary btn--lg order__file-label">
                             <img src="./assets/icons/attachment.svg" alt="Иконка вложения" class="order__file-icon"
                                  aria-hidden="true">
                             Прикрепить файл
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn--primary order__submit-btn">
+                <button type="submit" class="btn btn--primary btn--lg order__submit-btn">
                     Отправить
                 </button>
             </form>

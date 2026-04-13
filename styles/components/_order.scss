@@ -111,6 +111,26 @@
     }
   }
 
+  &__range-wrapper {
+    width: 100%;
+  }
+
+  &__range-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  &__label {
+    font-size: $fs-18;
+  }
+
+  &__range-value {
+    font-size: $fs-18;
+    font-weight: 600;
+    color: $color-input-bg;
+  }
+
   &__file-wrapper {
     width: 100%;
     max-width: 370px;
