@@ -31,7 +31,7 @@ function selectOption(el) {
     btn.textContent = el.textContent
 
     if (hiddenInput) {
-        hiddenInput.value = el.dataset.value || el.textContent
+        hiddenInput.value = el.dataset.value || el.textContent.trim()
     }
 }
 
