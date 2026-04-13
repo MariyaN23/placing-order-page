@@ -28,16 +28,16 @@
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item">
-                    <a href="/" class="header__link">Бизнес</a>
+                    <a href="#" class="header__link header__link--active">Бизнес</a>
                 </li>
                 <li class="header__item">
-                    <a href="/" class="header__link">О нас</a>
+                    <a href="#" class="header__link">О нас</a>
                 </li>
                 <li class="header__item">
-                    <a href="/" class="header__link">Цены</a>
+                    <a href="#" class="header__link">Цены</a>
                 </li>
                 <li class="header__item">
-                    <a href="/" class="header__link header__link--order">Оформить заказ</a>
+                    <a href="#" class="header__link header__link--order">Оформить заказ</a>
                 </li>
             </ul>
         </nav>
@@ -173,7 +173,7 @@
                         <input type="range" name="percent" id="percent" class="order__range" min="0" max="100" step="1"
                                value="75">
                     </div>
-                    <div class="order__file-wrapper">
+                    <div class="order__file-wrapper" tabindex="0" id="fileWrapper">
                         <input name="attachment" id="attachment" type="file" class="order__file-input"/>
                         <label for="attachment" class="btn btn--secondary btn--lg order__file-label">
                             <img src="./assets/icons/attachment.svg" alt="Иконка вложения" class="order__file-icon"

@@ -141,9 +141,13 @@
     font-size: $fs-13;
     font-weight: 600;
     text-transform: uppercase;
-    transition: color $duration $function;
+    transition: opacity $duration $function;
 
     &:hover {
+      opacity: 0.8;
+    }
+
+    &--active {
       color: $color-accent;
     }
   }

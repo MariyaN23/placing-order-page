@@ -138,6 +138,12 @@
     max-width: 370px;
   }
 
+  &__file-label {
+    font-size: $fs-15;
+    color: $color-content-bg;
+    border: 2px solid $color-accent-dark;
+  }
+
   &__submit-btn {
     margin: 40px auto 0;
     width: 100%;

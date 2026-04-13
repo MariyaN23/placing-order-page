@@ -86,7 +86,7 @@
     font-size: $fs-18;
     transition: color $duration $function;
 
-    &:hover, &:focus {
+    &:hover {
       color: $color-accent-lighter;
     }
 

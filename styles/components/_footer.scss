@@ -6,12 +6,12 @@
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 20px 0;
 
     @include respond-to("desktop") {
       padding: 0;
-      align-items: center;
       justify-content: space-between;
       flex-direction: row;
       height: 80px;
@@ -20,6 +20,7 @@
 
   &__copyright {
     font-size: $fs-13;
+    text-align: center;
   }
 
   &__info {

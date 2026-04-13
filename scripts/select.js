@@ -77,3 +77,13 @@ selectContainer.addEventListener('focusout', (e) => {
         list.classList.remove('active')
     }
 })
+
+export function resetSelect() {
+    options.forEach(opt => opt.setAttribute('aria-selected', 'false'))
+    btn.textContent = 'Выберите тип системы'
+    if (hiddenInput) {
+        hiddenInput.value = ''
+    }
+    list.classList.remove('active')
+    btn.setAttribute('aria-expanded', 'false')
+}
