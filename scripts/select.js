@@ -4,17 +4,29 @@ const list = document.getElementById('select-list')
 const hiddenInput = document.getElementById('system-type-value')
 const options = Array.from(list.querySelectorAll('.custom-select__option'))
 
-const toggleList = () => {
+const toggleList = (e) => {
     const isOpen = btn.getAttribute('aria-expanded') === 'true'
     btn.setAttribute('aria-expanded', String(!isOpen))
     list.classList.toggle('active')
     if (!isOpen) {
-        const selected = list.querySelector('[aria-selected="true"]') || options[0]
-        selected.focus()
+        if (e && e.pointerType !== 'mouse') {
+            const selected = list.querySelector('[aria-selected="true"]') || options[0]
+            selected.focus()
+        }
     }
 }
 
-btn.addEventListener('click', toggleList)
+btn.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+    toggleList()
+})
+
+btn.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        e.preventDefault()
+        toggleList(e)
+    }
+})
 
 list.addEventListener('click', (e) => {
     const target = e.target.closest('.custom-select__option')
