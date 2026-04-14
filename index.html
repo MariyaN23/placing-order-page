@@ -174,11 +174,18 @@
                                value="75">
                     </div>
                     <div class="order__file-wrapper" tabindex="0" id="fileWrapper">
-                        <input name="attachment" id="attachment" type="file" class="order__file-input"/>
+                        <input
+                                name="attachment"
+                                id="attachment"
+                                type="file"
+                                class="order__file-input sr-only"
+                                tabindex="-1"
+                                required
+                        />
                         <label for="attachment" class="btn btn--secondary btn--lg order__file-label">
                             <img src="./assets/icons/attachment.svg" alt="Иконка вложения" class="order__file-icon"
                                  aria-hidden="true" width="20" height="20">
-                            Прикрепить файл
+                            <span id="file-text" class="order__file-text">Прикрепить файл</span>
                         </label>
                     </div>
                 </div>

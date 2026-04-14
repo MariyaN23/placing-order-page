@@ -136,12 +136,24 @@
   &__file-wrapper {
     width: 100%;
     max-width: 370px;
+    position: relative;
   }
 
   &__file-label {
     font-size: $fs-15;
     color: $color-content-bg;
     border: 2px solid $color-accent-dark;
+  }
+
+  &__file-input {
+    bottom: 0;
+    left: 50%;
+  }
+
+  &__file-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__submit-btn {
